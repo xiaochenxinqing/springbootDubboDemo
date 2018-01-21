@@ -1,0 +1,23 @@
+spring:
+  profiles:
+      active: test
+  session:
+    store-type: redis
+  redis:
+      database: 0
+      password:
+      pool:
+        max-active: 200
+        max-wait: -1
+        max-idle: 20
+        min-idle: 0
+      timeout: 0
+      sentinel:
+        master: mymaster
+        nodes: 10.138.16.194:26379
+  http:
+    multipart:
+# Single file max size
+      maxFileSize: 50Mb
+# All files max size
+      maxRequestSize: 50Mb

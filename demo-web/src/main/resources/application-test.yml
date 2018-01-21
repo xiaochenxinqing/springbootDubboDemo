@@ -1,0 +1,11 @@
+server:
+  port: 8089
+  context-path: /
+zk:
+  registry6901: zookeeper://127.0.0.1:2181
+  registry6902: zookeeper://127.0.0.1:2181
+  registry6903: zookeeper://127.0.0.1:2181
+
+#测试防止大家的服务调串，请自行修改版本
+dubbo:
+  version: 3.6
